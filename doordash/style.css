@@ -15,6 +15,7 @@
     position: relative;
     width: 100%;
     height: 120vh;
+    object-fit: cover;
 }
  
 .description {
@@ -86,10 +87,61 @@ h1 {
     top: 12px;
 }
 
-@media  screen and   (max-width:800px) {
+.all-uptions {
+    display: flex;
+    flex-direction: row;
+    gap: 5rem;
+    justify-content: center;
+    padding: 5rem;
+    align-self: center;
+    gap: 5rem;
+    padding: 5rem;
+}
 
-    .title {
-        justify-content: ;
+.uption-parent {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+.uption-img {
+    width: 130px;
+    align-self: center;
+}
+
+h2 {
+    font-size: 2rem;
+    text-align: center;
+    max-width: 252px;
+}
+
+.uption-description {
+    font-size: 18px;
+    width: 250px;
+}
+
+.link {
+    display: flex;
+    flex-direction: row;
+    align-self: center;
+}
+
+a {
+    font-size: 18px;
+    text-decoration: none;
+    color: red;
+    align-self: center;
+    justify-self: center;
+}
+.link-arrow {
+    width: 18px;
+}
+
+
+@media  screen and   (max-width:890px) {
+
+    .description {
+        gap: 2rem;
     }
     .title-img {
         fill: none;
@@ -97,19 +149,59 @@ h1 {
     h1 {
         font-size: 30px;
         text-align: center;
+        padding: 2rem;
     }
 
      .location-input {
-        width: 400px;
+        width: 300px;
+        height: 3rem;
+     }
+
+     .location-button {
+        background-color: white;
+        top: 0rem;
+     }
+
+     .arrow {
+        width: 1.5rem;
+     }
+
+     .location-svg {
+        top: 14px;
+        width: 1.5rem;
      }
      
      .login-button {
-        width: 200px;
-        font-size: 11px;
+        width: 220px;
+        font-size: 13px;
      }
 
      .user-svg {
         width: 20px;
 
+     }
+
+     .all-uptions {
+        flex-direction: column;
+        align-content: center;
+     }
+
+     .parent-uption {
+        display: flex;
+        flex-direction: row;
+     }
+
+     .link {
+        align-content: center;
+
+     }
+
+     .uption-parent {
+        flex-direction: row;
+        justify-content: center;
+     }
+
+     .uption-img {
+        width: 124px;
      }
 }
